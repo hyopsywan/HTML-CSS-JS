@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 2 - Mudar estilo </title>
+    <style>
+         .texto-azul {
+            color: blue;
+         }
+    </style>
+</head>
+<body>
+    <p id="meu-paragrafo"> Este paragrafo ficará azul ao carregar!</p>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded",() => {
+        const p = document.getElementById("Meu-Paragrafo");
+        p.style.color = "blue"
+        p.classList.add("texto-azul");
+    })
+</script>
+</html>

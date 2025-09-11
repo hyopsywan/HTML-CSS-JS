@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="foto" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-FqgruBiRDSCuxwhPKMygVKVpvbMDoNleT5WS456aiiDcTwYV99HJNtqD9lDpzcUMAUZRBckkf2PJgByk_gMicQhYvkgI0P9xJ6OrTuiB74Mr3f1LJCjoKR9-wYaGakrN05TSxvJpaMp2/s1600/casteloanimado_2005_img_11.jpg">
+    <br>
+    <button id="trocar">trocar imagem</button>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const img = document.getElementById("foto")
+        const btn = document.getElementById("trocar")
+
+        btn.addEventListener("click", () => {
+            img.src = "https://miro.medium.com/v2/resize:fit:1400/1*Q5g4QK6i-v-TrbRBd6XYSg.png"
+        })
+    })
+</script>
+</html>
